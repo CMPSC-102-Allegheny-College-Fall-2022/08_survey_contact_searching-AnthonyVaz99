@@ -1,9 +1,14 @@
 """Define the command-line interface for the contact searching program."""
 
-# TODO: Add all of the required import statements to this module
+# Add all of the required import statements to this module
+from pathlib import Path
 
+from typing import Optional
+
+import typer
 # TODO: create a Typer object to support the command-line interface
 
+cli = typer.Typer
 
 @cli.command()
 def contactsearcher(

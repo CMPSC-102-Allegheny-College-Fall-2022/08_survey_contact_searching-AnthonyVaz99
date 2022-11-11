@@ -9,7 +9,8 @@ import csv
 
 def search_for_email_given_job(job_description: str, contacts: str) -> List[List[str]]:
     """Search for and return job description(s) given an email address."""
-    # TODO: create an empty list of the contacts
+    # create an empty list of the contacts
+    contacts = []
     # TODO: iterate through the file, parsing it line by line
     # TODO: refer to the file called input/contacts.txt to learn more about
     # the format of the comma separated value (CSV) file that we must parse
