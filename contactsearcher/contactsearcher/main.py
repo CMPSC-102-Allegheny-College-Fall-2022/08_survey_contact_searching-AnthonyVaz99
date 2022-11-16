@@ -7,6 +7,7 @@ import typer
 
 cli = typer.Typer()
 
+
 @cli.command()
 def contactsearcher(
     job_description: str = typer.Option(..., prompt=True),

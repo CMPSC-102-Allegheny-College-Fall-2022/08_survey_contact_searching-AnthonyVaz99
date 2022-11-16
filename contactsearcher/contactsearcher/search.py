@@ -4,7 +4,7 @@ from typing import List
 
 import csv
 
-# note: see https://docs.python.org/3/library/csv.html 
+# note: see https://docs.python.org/3/library/csv.html
 
 
 def search_for_email_given_job(job_description: str, contacts: str) -> List[List[str]]:
@@ -13,15 +13,15 @@ def search_for_email_given_job(job_description: str, contacts: str) -> List[List
     current_contact_job = []
     with open(contacts, "r") as csv_file:
         file = csv.reader(csv_file)
-    # iterate through the file, parsing it line by line
-    # refer to the file called input/contacts.txt to learn more about
-    # the format of the comma separated value (CSV) file that we must parse
-    # iterate through each line of the file and extract the current job
-    # ---> extract the current job for the contact on this line of the CSV
+        # iterate through the file, parsing it line by line
+        # refer to the file called input/contacts.txt to learn more about
+        # the format of the comma separated value (CSV) file that we must parse
+        # iterate through each line of the file and extract the current job
+        # ---> extract the current job for the contact on this line of the CSV
         for cont in file:
             if job_description in cont[1]:
                 current_contact_job.append(cont)
-        
+
         return current_contact_job
     # ---> the job description matches and thus we should save it in the list
     # return the list of the contacts who have a job description that matches
