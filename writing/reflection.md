@@ -1,11 +1,5 @@
 # Contact Searching
 
-Make sure that you delete all of the markers and the written prompts
-from this document. You should also ensure that the document does not have any
-mistakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
-version of your reflection should be a polished document that is suitable for
-publication on your web site.
-
 ## Anthony Vazquez
 
 ## Program Output
@@ -79,11 +73,11 @@ def contactsearcher(
 ) -> None:
 ```
 
-Make sure that you delete all of the markers and the written prompts
-from this document. You should also ensure that the document does not have any
-mistakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
-version of your reflection should be a polished document that is suitable for
-publication on your web site.
+I make sure that you delete all of the markers and the written prompts
+rom this document. You should also ensure that the document does not have any
+istakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
+ersion of your reflection should be a polished document that is suitable for
+ublication on your web site.
 
 #### Invocation of the function called `search_for_email_given_job`
 
@@ -91,11 +85,16 @@ publication on your web site.
 find = search.search_for_email_given_job(job_description, contacts_file)
 ```
 
-Make sure that you delete all of the markers and the written prompts
-from this document. You should also ensure that the document does not have any
-mistakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
-version of your reflection should be a polished document that is suitable for
-publication on your web site.
+I make sure that you delete all of the markers and the written prompts
+rom this document. You should also ensure that the document does not have any
+istakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
+ersion of your reflection should be a polished document that is suitable for
+ublication on your web site.
+I make sure that you delete all of the markers and the written prompts
+rom this document. You should also ensure that the document does not have any
+istakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
+ersion of your reflection should be a polished document that is suitable for
+ublication on your web site.
 
 #### Test case for the function called `search_for_email_given_job`
 
@@ -109,22 +108,17 @@ shawkins@watson.com,Science writer"""
     assert len(contacts_list) == 1
 ```
 
-Make sure that you delete all of the markers and the written prompts
-from this document. You should also ensure that the document does not have any
-mistakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
-version of your reflection should be a polished document that is suitable for
-publication on your web site.
+I make sure that you delete all of the markers and the written prompts
+rom this document. You should also ensure that the document does not have any
+istakes in spelling, grammar, or the syntax of Markdown. Ultimately, the final
+ersion of your reflection should be a polished document that is suitable for
+ublication on your web site.
 
 #### Execute trace of the `contactsearcher` program
 
 ```python
 def search_for_email_given_job(job_description: str, contacts: str) -> List[List[str]]:
 ```
-
-TODO: Your discussion should start with the invocation of the `contactsearcher`
-function in the `main` module, explain all of the subsequent function calls in
-the correct order, and then show how the program's control returns to the
-`contactsearcher` function in the `main` module.
 
 - `poetry run contactsearcher --job-description "engineer" --contacts-file input/contacts.txt`
 
