@@ -72,8 +72,12 @@ publication on your web site.
 
 #### The source code statement that extracts the current job description for a contact
 
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+```python
+def contactsearcher(
+    job_description: str = typer.Option(..., prompt=True),
+    contacts_file: Optional[Path] = typer.Option(None),
+) -> None:
+```
 
 Make sure that you delete all of the markers and the written prompts
 from this document. You should also ensure that the document does not have any
@@ -83,8 +87,9 @@ publication on your web site.
 
 #### Invocation of the function called `search_for_email_given_job`
 
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+```python
+find = search.search_for_email_given_job(job_description, contacts_file)
+```
 
 Make sure that you delete all of the markers and the written prompts
 from this document. You should also ensure that the document does not have any
@@ -94,8 +99,15 @@ publication on your web site.
 
 #### Test case for the function called `search_for_email_given_job`
 
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+```python
+def test_find_one_matching_result():
+    contacts_database = """kylebarnes@hotmail.com,Records manager
+joe70@yahoo.com,Network engineer
+torresjames@white.info,Electrical engineer
+shawkins@watson.com,Science writer"""
+    contacts_list = search.search_for_email_given_job("writer", contacts_database)
+    assert len(contacts_list) == 1
+```
 
 Make sure that you delete all of the markers and the written prompts
 from this document. You should also ensure that the document does not have any
