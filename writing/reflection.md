@@ -117,8 +117,9 @@ publication on your web site.
 
 #### Execute trace of the `contactsearcher` program
 
-TODO: Explain each function call that takes place for the following run of the program
-TODO: Write at least one paragraph to explain every function call when running `contactsearcher`
+```python
+def search_for_email_given_job(job_description: str, contacts: str) -> List[List[str]]:
+```
 
 TODO: Your discussion should start with the invocation of the `contactsearcher`
 function in the `main` module, explain all of the subsequent function calls in
@@ -137,8 +138,11 @@ publication on your web site.
 
 ### So far this semester, what is one area in which you have struggled? How did you overcome this challenge?
 
-TODO: Provide a one-paragraph response that answers this question in your own words.
+I have struggled completing all of the reflections. Between this class and compsci
+101, there is a lot of writing to do on top of how long the reflections are to
+begin with.
 
 ### Based on your experiences with this project, what is one way in which you want to improve?
 
-TODO: Provide a one-paragraph response that answers this question in your own words.
+I wish to be more efficent. Sometimes I feel like I spend an eternity on the
+same issue.
