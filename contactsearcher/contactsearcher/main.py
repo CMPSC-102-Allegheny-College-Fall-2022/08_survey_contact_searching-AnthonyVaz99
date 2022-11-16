@@ -43,7 +43,7 @@ def contactsearcher(
     # the contacts and display them in the terminal window
     for person in find:
         print(f"  {person[0]} is a {person[1]}")
-    # TODO: display final information about the program's behavior in the terminal window;
+    # display final information about the program's behavior in the terminal window;
     # this should summarize whether or not the program found any matches
-    # TODO: refer to the expected output on Discord and/or Proactive Programmers for details
+    # refer to the expected output on Discord and/or Proactive Programmers for details
     print("\nWow, we found some contacts! Email them to learn about your job!")

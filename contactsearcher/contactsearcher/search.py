@@ -10,7 +10,7 @@ import csv
 def search_for_email_given_job(job_description: str, contacts: str) -> List[List[str]]:
     """Search for and return job description(s) given an email address."""
     # create an empty list of the contacts
-    new_contacts = []
+    current_contact_job = []
     with open(contacts, "r") as csv_file:
         file = csv.reader(csv_file)
     # iterate through the file, parsing it line by line
@@ -20,8 +20,8 @@ def search_for_email_given_job(job_description: str, contacts: str) -> List[List
     # ---> extract the current job for the contact on this line of the CSV
         for cont in file:
             if job_description in cont[1]:
-                new_contacts.append(cont)
+                current_contact_job.append(cont)
         
-        return new_contacts
+        return current_contact_job
     # ---> the job description matches and thus we should save it in the list
     # return the list of the contacts who have a job description that matches
